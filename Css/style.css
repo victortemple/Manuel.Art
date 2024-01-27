@@ -1,0 +1,70 @@
+.txt{
+    width: 90%;
+    margin: auto;
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.conWrapper{
+    gap: 32.6rem;
+}
+
+.frP,
+.frHd{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.frHd{
+    font-size: 4.4rem;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+.frHdSpn{
+    font-size: 6.4rem;
+    color: #ffa055;
+    letter-spacing: 2px;
+}
+
+.cntBtn:link,
+.cntBtn:visited{
+    color: #ffa055;
+    background: #000000;
+    font-weight: 600;
+}
+
+.cntBtn:hover,
+.cntBtn:active{
+    color: #000000;
+    background: #ffa055;
+    font-weight: 600;
+}
+
+@media(max-width: 425px){
+    .txt{
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
+
+
+    .frHd{
+        font-size: 3.2rem;
+    }
+
+    .frHdSpn{
+        font-size: 5.2rem;
+    }
+
+    .txt{
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+

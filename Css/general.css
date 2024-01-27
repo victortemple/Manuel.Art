@@ -1,0 +1,220 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+  @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+  @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+html{
+    font-size: 52%;
+}
+
+body{
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+section.bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to bottom left, #0000008c, #ff9f5551, #ffffff4f), url(../Img/bg.jpg);
+    height: 100vh;
+}
+
+.container{
+    width: 164rem;
+    margin: 0 auto;
+}
+
+.conWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+.btn:link,
+.btn:visited{
+    padding: 1.2rem;
+    border-radius: 2.4rem;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    transition: all 0.5s ease-in;
+}
+
+/* codes for the nav bar */
+.logo{
+    width: 5.4rem;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navLinkList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navLinkList > .navLink{
+    padding: 1.8rem;
+}
+
+.nlTxt{
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.active:link,
+.active:visited{
+    color: #ffa055;
+    transition: all 0.5s ease;
+}
+
+.active:hover,
+.active:active{
+    color: #000000;
+}
+
+.hover:link,
+.hover:visited{
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.hover:hover,
+.hover:active{
+    color: #ffa055;
+}
+
+/* codes for mobile nav bar */
+#navMb{
+    position: fixed;
+    background-color: #ff9f552e;
+    backdrop-filter: blur(5px);
+    width: 50vw;
+    height: 100%;
+    padding-left: 1rem;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    display: none;
+}
+
+.imgcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4.4rem;
+}
+
+.mbBtn{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.mbIcon{
+    font-size: 4.4rem;
+}
+
+#navLinkMbList{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.navMb{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 1024px){
+    .navMb{
+        display: flex;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .container{
+        width: 100vw;
+    }
+}
+
+
+/* codes for mobile nav bar */
+
+/* codes for the nav bar */
+
+@media(max-width: 425px){
+    section.bg{
+        height: 100%;
+    }
+
+   p{
+    font-size: 1.6rem;
+   }
+
+   footer{
+    font-size: 1.2rem;
+    letter-spacing: 3.4px;
+   }
+}
+
+@media(max-width: 375px){
+
+   footer{
+    letter-spacing: 2.5px;
+   }
+}
+
+@media(max-width: 320px){
+
+   footer{
+    letter-spacing: 1.4px;
+   }
+}
